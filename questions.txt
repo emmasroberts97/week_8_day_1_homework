@@ -47,5 +47,12 @@ The front-end application makes requests to the '/' route and the '/:id' route.
 
 8. What are we using the MongoDB Driver for?
 
-It allows us to connect directly to the database when starting the
-application. 
+MongoDB acts as our database and holds the information from the seeds
+file. The MongoDB Client us to connect directly to the database when starting the
+application.
+
+9. Why do we need to use ObjectId from the MongoDB driver?
+
+It allows us to use a document's id to find, update and delete.
+Without this unique identifier, we would not be able to perform
+these actions.
